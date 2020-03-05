@@ -37,8 +37,8 @@ query {
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Homepage'
-  }
+    metaInfo: {
+      title: 'Homepage'
+    }
 }
 </script>

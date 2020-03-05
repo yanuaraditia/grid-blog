@@ -1,0 +1,90 @@
+body {
+    --bg-color: #fff;
+    --bg-trans: rgba(0,0,0,0.125);
+    --body-color: #444;
+    --link-color: #101010;
+    --fontA: 'Karla',sans-serif;
+    --fontB: 'Roboto',sans-serif;
+    --radius: .5rem;
+    --nav-color: #43a047;
+
+    font-family: var(--fontB);
+    background: var(--bg-color);
+    color: var(--body-color);
+    h1,h2,h3,h4,h5,h6 {
+        font-family: var(--fontA);
+        font-weight: 700;
+    }
+    a {
+        color: var(--link-color);
+        &:hover {
+            color: var(--link-color);
+            opacity: .8;
+        }
+    }
+    .container-xs {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .card {
+        background: var(--bg-trans);
+        border-radius: var(--radius);
+        border: none;
+    }
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                color:var(--nav-color);
+                font-family: var(--fontA);
+                .toggle-theme {
+                    color:var(--nav-color);
+                }
+            }
+        }
+    }
+    .author_info {
+        margin: 4rem auto;
+        .author_image {
+            border-radius: 100%;
+            padding: 1rem;
+            border: 4px solid var(--link-color);
+        }
+        .author_image_mask {
+            opacity: .2;
+            filter: blur(20px);
+            position: absolute;
+            border-radius: 100%;
+            transform: scale(1.5);
+        }
+        .info_section {
+            h1 {
+                color: var(--link-color);
+            }
+            .link {
+                a {
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+body[data-theme='light'] {
+    .navbar {
+        background: #101010;
+    }
+}
+body[data-theme='dark'] {
+    --bg-color: #101010;
+    --bg-trans: rgba(255,255,255,.05);
+    --body-color: #fff;
+    --link-color: #43a047;
+    .navbar-dark {
+        .navbar-nav {
+            .nav-link {
+                color:var(--link-color);
+            }
+        }
+    } 
+}

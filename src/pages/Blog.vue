@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="true">
-    <section>
+    <section class="mb-4 mb-lg-5">
       <div class="container">
         <div class="row">
             <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>

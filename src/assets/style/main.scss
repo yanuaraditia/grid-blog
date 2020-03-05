@@ -1,6 +1,7 @@
+@import 'code';
 body {
-    --bg-color: #fff;
-    --bg-trans: rgba(0,0,0,0.125);
+    --bg-color: #f0f0f0;
+    --bg-trans: #fff;
     --body-color: #444;
     --link-color: #101010;
     --fontA: 'Karla',sans-serif;
@@ -22,6 +23,12 @@ body {
             opacity: .8;
         }
     }
+    b,strong {
+        font-weight: 700!important;
+    }
+    #app {
+        margin-top: 6rem;
+    }
     .container-xs {
         max-width: 600px;
         margin: 0 auto;
@@ -32,6 +39,13 @@ body {
         border: none;
     }
     .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        svg {
+            color: var(--nav-color);
+        }
         .navbar-nav {
             .nav-link {
                 color:var(--nav-color);
@@ -68,6 +82,11 @@ body {
                 }
             }
         }
+    }
+    pre {
+        color: var(--body-color);
+        background: var(--bg-trans);
+        padding: 2rem;
     }
 }
 body[data-theme='light'] {

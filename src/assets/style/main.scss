@@ -7,7 +7,7 @@ body {
     --fontA: 'Karla',sans-serif;
     --fontB: 'Roboto',sans-serif;
     --radius: .5rem;
-    --nav-color: #fff;
+    --nav-color: #000;
     --space: 2.5rem;
     --primary-color: #43a047;
 
@@ -57,12 +57,16 @@ body {
         right: 0;
         z-index: 9999;
         svg {
-            color: var(--nav-color);
+            color: var(--link-color);
         }
         .navbar-toggler {
-            color: var(--nav-color);
+            color: var(--link-color);
+            border: none;
+            outline: none;
+            padding-left: 0;
+            padding-right: 0;
             span  {
-                color: var(--nav-color);
+                color: var(--link-color);
             }
         }
         .navbar-nav {
@@ -91,10 +95,15 @@ body {
         }
         .author_image_mask {
             opacity: .2;
-            filter: blur(17px);
-            position: absolute;
-            border-radius: 100%;
-            transform: scale(1.5);
+            @media (min-width:992px) {
+                filter: blur(17px);
+                position: absolute;
+                border-radius: 100%;
+                transform: scale(1.5);
+            }
+            @media (max-width:991px) {
+                display: none;
+            }
         }
         .info_section {
             h1 {
@@ -127,8 +136,8 @@ body {
 body[data-theme='light'] {
     @media screen and (max-width:991px) {
         .navbar {
-            background: #101010;
-        }    
+            background: #fff;
+        }
     }
 }
 body[data-theme='dark'] {
@@ -136,16 +145,16 @@ body[data-theme='dark'] {
     --bg-trans: rgba(255,255,255,.05);
     --body-color: #fff;
     --link-color: #43a047;
+    .navbar-nav {
+        .nav-link {
+            color:var(--link-color);
+        }
+    }
     @media screen and (max-width:991px) {
         .navbar {
             background: rgba(16,16,16,.6);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
-            .navbar-nav {
-                .nav-link {
-                    color:var(--link-color);
-                }
-            }
         }
     }
 }

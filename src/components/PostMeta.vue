@@ -1,5 +1,5 @@
 <template>
-   <div class="post-meta">
+   <div class="card-footer">
       Posted {{ post.date }}.
       <template v-if="post.timeToRead">
         <strong>{{ post.timeToRead }} min read.</strong>
@@ -12,10 +12,3 @@ export default {
   props: ['post']
 }
 </script>
-
-<style lang="scss">
-.post-meta {
-  font-size: .8em;
-  opacity: .8;
-}
-</style>

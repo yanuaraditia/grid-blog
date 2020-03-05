@@ -1,9 +1,12 @@
 <template>
   <Layout :show-logo="true">
-    <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
-
+    <section>
+      <div class="container">
+        <div class="row">
+            <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 

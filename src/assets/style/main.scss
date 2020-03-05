@@ -7,7 +7,6 @@ body {
     --fontA: 'Karla',sans-serif;
     --fontB: 'Roboto',sans-serif;
     --radius: .5rem;
-    --nav-color: #43a047;
     --space: 2.5rem;
     --primary-color: #43a047;
 
@@ -56,23 +55,22 @@ body {
         left: 0;
         right: 0;
         z-index: 9999;
-        border-bottom: 1px solid var(--bg-color);
         svg {
-            color: var(--nav-color);
+            color: var(--link-color);
         }
         .navbar-toggler {
-            color: var(--nav-color);
+            color: var(--link-color);
             span  {
-                color: var(--nav-color);
+                color: var(--link-color);
             }
         }
         .navbar-nav {
             .nav-link {
-                color:var(--nav-color);
+                color:var(--link-color);
                 font-family: var(--fontA);
                 margin-right: 10px;
                 .toggle-theme {
-                    color:var(--nav-color);
+                    color:var(--link-color);
                 }
             }
         }
@@ -123,11 +121,13 @@ body {
     background: var(--link-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--nav-color);
+    background: var(--link-color);
 }
 body[data-theme='light'] {
-    .navbar {
-        background: #101010;
+    @media screen and (max-width:991px) {
+        .navbar {
+            background: #101010;
+        }    
     }
 }
 body[data-theme='dark'] {
@@ -135,17 +135,18 @@ body[data-theme='dark'] {
     --bg-trans: rgba(255,255,255,.05);
     --body-color: #fff;
     --link-color: #43a047;
-    .navbar {
-        background: rgba(16,16,16,.6);
-        border-color:var(--bg-color);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        .navbar-nav {
-            .nav-link {
-                color:var(--link-color);
+    @media screen and (max-width:991px) {
+        .navbar {
+            background: rgba(16,16,16,.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            .navbar-nav {
+                .nav-link {
+                    color:var(--link-color);
+                }
             }
         }
-    } 
+    }
 }
 @media screen and (max-width:991px) {
     .container-xs {

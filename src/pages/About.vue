@@ -1,7 +1,6 @@
 <template>
   <Layout :show-logo="true">
-    <Author :show-title="true" :show-desc="false" />
-    <section class="about-me container">
+    <section class="about-me container-xs">
         <h3>Arround the web</h3>
         <ul>
             <li>Github : <a href="//github.com/yanuaraditia">yanuaraditia</a></li>
@@ -27,12 +26,7 @@
   </Layout>
 </template>
 <script>
-import Author from '~/components/Author.vue'
-
 export default {
-  components: {
-    Author
-  },
   metaInfo: {
     title: 'About Me'
   }
@@ -40,8 +34,6 @@ export default {
 </script>
 <style lang='scss'>
 .about-me {
-    margin: 0 auto;
-    max-width: 500px;
     ul {
         li {
             span {

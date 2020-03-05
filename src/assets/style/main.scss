@@ -82,6 +82,9 @@ body {
     }
     .author_info {
         margin: 5rem auto 4rem;
+        @media screen and (min-height:769px) {
+            margin: 20vh auto;
+        }
         .canvas {
             display: inline-block;
             border-radius: 100%;
@@ -164,5 +167,17 @@ body[data-theme='dark'] {
     }
     .footer {
         margin-top: 4rem;
+    }
+}
+@media screen and (min-height:769px) {
+    #app {
+        margin-bottom: 20vh;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: var(--bg-color);
     }
 }

@@ -34,7 +34,6 @@ query {
   }
 }
 </static-query>
-
 <script>
 export default {
     metaInfo: {

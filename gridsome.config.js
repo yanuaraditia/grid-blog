@@ -44,11 +44,11 @@ module.exports = {
           serviceWorkerPath: 'service-worker.js',
           cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
           shortName: 'Yanuar Aditia',
-          themeColor: '#ffcc00',
+          themeColor: '#43a047',
           backgroundColor: '#ffffff',
           icon: './src/assets/images/author.png', // must be provided like 'src/favicon.png'
           msTileImage: '',
-          msTileColor: '#ffcc00'
+          msTileColor: '#43a047'
       }
     },
     {
@@ -67,7 +67,7 @@ module.exports = {
           icon_path: "./src/assets/images/author.png",
           name: "Yanuar Aditia",
           short_name: "Yanuar Aditia",
-          theme_color: "#FFcc00",
+          theme_color: "#43a047",
           lang: "en",
       },
     },

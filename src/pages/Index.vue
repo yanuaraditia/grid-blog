@@ -4,7 +4,9 @@
       <div class="author_info text-center">
         <figure>
           <g-image src="~/assets/images/kucing.jpg" width="220" height="220" blur="10" alt="Me" class="author_image_mask"/>
-          <g-image src="~/assets/images/kucing.jpg" width="220" height="220" blur="10" alt="Me" class="author_image"/>
+          <div class="canvas">
+            <g-image src="~/assets/images/kucing.jpg" width="220" height="220" blur="10" alt="Me" class="author_image"/>
+          </div>
         </figure>
         <div class="info_section">
           <h1>{{ $static.metadata.siteName }}</h1>
@@ -36,7 +38,7 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Homepage'
   }
 }
 </script>

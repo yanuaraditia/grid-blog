@@ -7,6 +7,7 @@ body {
     --fontA: 'Karla',sans-serif;
     --fontB: 'Roboto',sans-serif;
     --radius: .5rem;
+    --nav-color: #fff;
     --space: 2.5rem;
     --primary-color: #43a047;
 
@@ -56,21 +57,21 @@ body {
         right: 0;
         z-index: 9999;
         svg {
-            color: var(--link-color);
+            color: var(--nav-color);
         }
         .navbar-toggler {
-            color: var(--link-color);
+            color: var(--nav-color);
             span  {
-                color: var(--link-color);
+                color: var(--nav-color);
             }
         }
         .navbar-nav {
             .nav-link {
-                color:var(--link-color);
+                color:var(--nav-color);
                 font-family: var(--fontA);
                 margin-right: 10px;
                 .toggle-theme {
-                    color:var(--link-color);
+                    color:var(--nav-color);
                 }
             }
         }
@@ -121,7 +122,7 @@ body {
     background: var(--link-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--link-color);
+    background: var(--nav-color);
 }
 body[data-theme='light'] {
     @media screen and (max-width:991px) {

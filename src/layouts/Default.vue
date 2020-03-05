@@ -21,9 +21,8 @@
       <slot/>
     </main>
     <footer class="footer text-center">
-      <p class="footer__copyright"><span>Copyright © {{ new Date().getFullYear() }}.</span><span>Powered by <a href="//gridsome.org"> Gridsome </a> and <a href="//netlify.com">Netlify</a></span></p>
+      <p class="footer__copyright"><span>Copyright © {{ new Date().getFullYear() }} by Yanuar Aditia.</span><span>Powered by <a href="//gridsome.org"> Gridsome </a> and <a href="//netlify.com">Netlify</a></span></p>
     </footer>
-
   </div>
 </template>
 
@@ -41,3 +40,13 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.footer {
+  &__copyright {
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+</style>

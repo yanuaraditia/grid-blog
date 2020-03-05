@@ -37,7 +37,7 @@ export default {
     height: 100%;
     opacity: 0.0;
     overflow: hidden;
-    text-indent: -9999px;
+    text-indent: -99px;
     z-index: 0;
   }
 }

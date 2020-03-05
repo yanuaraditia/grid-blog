@@ -8,6 +8,7 @@ body {
     --fontB: 'Roboto',sans-serif;
     --radius: .5rem;
     --nav-color: #43a047;
+    --space: 2.5rem;
 
     font-family: var(--fontB);
     background: var(--bg-color);
@@ -43,13 +44,22 @@ body {
         top: 0;
         left: 0;
         right: 0;
+        z-index: 9999;
+        border-bottom: 1px solid var(--bg-color);
         svg {
             color: var(--nav-color);
+        }
+        .navbar-toggler {
+            color: var(--nav-color);
+            span  {
+                color: var(--nav-color);
+            }
         }
         .navbar-nav {
             .nav-link {
                 color:var(--nav-color);
                 font-family: var(--fontA);
+                margin-right: 10px;
                 .toggle-theme {
                     color:var(--nav-color);
                 }
@@ -83,11 +93,20 @@ body {
             }
         }
     }
-    pre {
-        color: var(--body-color);
-        background: var(--bg-trans);
-        padding: 2rem;
-    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: var(--link-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--nav-color);
 }
 body[data-theme='light'] {
     .navbar {
@@ -99,11 +118,23 @@ body[data-theme='dark'] {
     --bg-trans: rgba(255,255,255,.05);
     --body-color: #fff;
     --link-color: #43a047;
-    .navbar-dark {
+    .navbar {
+        background: rgba(16,16,16,.35);
+        border-color:var(--bg-color);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         .navbar-nav {
             .nav-link {
                 color:var(--link-color);
             }
         }
     } 
+}
+@media screen and (max-width:991px) {
+    .container-xs {
+        padding: 0 2rem;
+    }
+    .footer {
+        margin-top: 4rem;
+    }
 }

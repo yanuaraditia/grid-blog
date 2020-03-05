@@ -1,8 +1,8 @@
 <template>
   <b-nav-item>
     <button role="button" aria-label="Toggle dark/light" @click.prevent="toggleTheme" class="toggle-theme">
-      <b-icon-brightness-high v-if="darkTheme"></b-icon-brightness-high>
-      <b-icon-moon v-else></b-icon-moon>
+      <b-icon-moon v-if="darkTheme"></b-icon-moon>
+      <b-icon-brightness-high v-else></b-icon-brightness-high>
     </button>
   </b-nav-item>
 </template>

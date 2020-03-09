@@ -21,9 +21,6 @@
                         <li><strong class="text-primary">E-mail:</strong> me@yanuaraditia.com</li>
                     </ul>
                 </div>
-                <div class="bts bts-list">
-                    <a href="#" class="btn btn-outline-primary" data-text="Download CV">Download CV </a>
-                </div>
             </div>
         </div>
     </section>

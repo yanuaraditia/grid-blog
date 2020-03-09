@@ -41,10 +41,32 @@ body {
             background-color: var(--link-color)!important;
             border-color: var(--link-color)!important;
         }
+        &.btn-outline-primary {
+            border-color: var(--link-color)!important;
+            color: var(--link-color)!important;
+            &:hover {
+                background: var(--link-color);
+                color: var(--bg-color)!important;
+            }
+        }
     }
-    .container-xs {
-        max-width: 600px;
+    strong {
+        font-weight: 700;
+    }
+    .text {
+        &-primary {
+            color: var(--primary-color)!important;
+        }
+    }
+    .container {
+        max-width: 1120px;
         margin: 0 auto;
+        &-xs {
+            max-width: 600px;
+        }
+        &-md {
+            max-width:  900px;
+        }
     }
     .card {
         background: var(--bg-trans);

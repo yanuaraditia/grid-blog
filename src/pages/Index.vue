@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="false">
-    <div class="container-xs">
+    <div class="container-md">
       <div class="author_info text-center">
         <figure>
           <g-image src="~/assets/images/kucing.jpg" width="220" height="220" blur="10" alt="Me" class="author_image_mask"/>

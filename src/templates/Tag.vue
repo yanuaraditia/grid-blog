@@ -1,12 +1,15 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
-    </h1>
-
-    <div class="posts">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
+    <section class="mb-4 mb-lg-5">
+      <div class="container">
+        <h2 class="tag-title text-center space-bottom">
+            # {{ $page.tag.title }}
+        </h2>
+        <div class="row">
+          <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -40,12 +43,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Post by Tag'
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
-

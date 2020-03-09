@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="mb-4 mb-lg-5">
-      <div class="container-xs">
+      <div class="container-md">
         <div class="post-title mb-3 mb-lg-4">
           <h1 class="post-title__text">
             {{ $page.post.title }}

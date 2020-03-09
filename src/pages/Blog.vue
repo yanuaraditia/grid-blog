@@ -2,6 +2,9 @@
   <Layout :show-logo="true">
     <section class="mb-4 mb-lg-5">
       <div class="container">
+        <h2 class="tag-title text-center space-bottom">
+            Blog
+        </h2>
         <div class="row">
             <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
         </div>

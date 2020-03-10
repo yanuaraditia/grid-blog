@@ -1,6 +1,6 @@
 // Import main css
 import { BootstrapVue } from 'bootstrap-vue'
-
+import VueFire from "vuefire"
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '~/assets/style/main.scss'

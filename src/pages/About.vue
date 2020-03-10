@@ -3,7 +3,7 @@
     <section class="my-resume">
         <div class="container-md">
             <div class="title">
-                <h3>My Resume</h3>
+                <h1>My Resume</h1>
             </div>
             <div class="image">
                 <g-image src="~/assets/images/author.png" width="100" height="100" blur="5"/>

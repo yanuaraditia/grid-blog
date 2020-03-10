@@ -10,6 +10,7 @@ body {
     --nav-color: #000;
     --space: 2.5rem;
     --primary-color: #43a047;
+    --border-color: #444;
 
     font-family: var(--fontB);
     background: var(--bg-color);
@@ -171,6 +172,7 @@ body[data-theme='dark'] {
     --bg-trans: rgba(255,255,255,.05);
     --body-color: #fff;
     --link-color: #43a047;
+    --border-color: #555;
     .navbar-nav {
         .nav-link {
             color:var(--link-color);

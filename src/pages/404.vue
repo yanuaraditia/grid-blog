@@ -6,7 +6,7 @@
                     <figure>
                         <g-image src="~/assets/images/sadness.jpg" width="220" height="220" blur="10" alt="Me" class="author_image_mask"/>
                         <div class="canvas">
-                            <g-image src="~/assets/images/sadness.jpg" width="220" height="220" blur="10" alt="Me" class="author_image"/>
+                            <g-image src="~/assets/images/sadness.jpg" width="220" height="220"  alt="Me" class="author_image"/>
                         </div>
                     </figure>
                     <div class="info_section">

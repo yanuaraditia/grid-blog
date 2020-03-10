@@ -1,6 +1,6 @@
 <template>
     <div class="card-text">
-      <small class="text-muted">Posted <date>{{ post.date }}</date>. 
+      <small class="text-muted">Posted <time>{{ post.date }}</time>. 
         <template v-if="post.timeToRead">
           <strong>{{ post.timeToRead }} min read.</strong>
         </template>

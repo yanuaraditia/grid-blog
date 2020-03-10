@@ -163,9 +163,12 @@ export default {
         margin-bottom: 3rem;
     }
     .image {
-        float: left;
+        @media screen and (min-width:992px) {
+            float: left;
+        }
         img {
             border-radius: 100px;
+            margin-bottom: 2rem;
         }
     }
     .desc {
@@ -180,8 +183,18 @@ export default {
                 li {
                     display: inline-block;
                     vertical-align: top;
-                    width: 32%;
+                    @media screen and (min-width:992px) {
+                        width: 32%;
+                    }
+                    @media screen and (max-width:991px) {
+                        width: 49%;
+                    }
                     margin: 12px 0 0;
+                    strong {
+                        @media screen and (max-width:991px) {
+                            display: block;
+                        }
+                    }
                 }
             }
         }

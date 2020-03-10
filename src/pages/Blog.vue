@@ -38,13 +38,27 @@ query {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
-
+const description = "See what's on my spending time"
 export default {
   components: {
     PostCard
   },
   metaInfo: {
-    title: 'Blog'
+    title: 'Blog',
+    meta: [
+        {
+          name: 'description',
+          content: description,
+        },
+        {
+          property: 'og:title',
+          content: 'Blog - Yanuar Aditia',
+        },
+        {
+          property: 'og:description',
+          content: description,
+        }
+    ]
   }
 }
 </script>

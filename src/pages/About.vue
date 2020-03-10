@@ -152,7 +152,13 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Me'
+    title: 'Me',
+    meta: [
+        {
+            name: 'description',
+            content: 'Hello! I’m Yanuar Aditia. Software Engineer from Indonesia, Yogyakarta, Sleman. I have rich experience in web development and also UI / UX Development.'
+        }
+    ]
   }
 }
 </script>

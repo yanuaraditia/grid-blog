@@ -20,7 +20,8 @@ module.exports = {
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
-      options: {
+      options: 
+        {
         typeName: 'Post',
         path: 'content/posts/*.md',
         refs: {

@@ -37,7 +37,15 @@ export default {
       meta: [
         {
           name: 'description',
-          content: this.$page.post.description
+          content: this.$page.post.description,
+        },
+        {
+          property: 'og:title',
+          content: this.$page.post.title+' - Blog - Yanuar Aditia',
+        },
+        {
+          property: 'og:description',
+          content: this.$page.post.description,
         }
       ]
     }

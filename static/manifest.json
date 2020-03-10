@@ -3,7 +3,7 @@
     "icon_path": "./src/assets/images/author.png",
     "name": "Yanuar Aditia",
     "short_name": "Yanuar Aditia",
-    "theme_color": "#FFcc00",
+    "theme_color": "#43a047",
     "lang": "en",
     "display": "minimal-ui",
     "file_name": "manifest.json",

@@ -24,7 +24,7 @@
 import { initializeApp } from 'firebase'
 const app = initializeApp({
     apiKey: "AIzaSyBwxohDhTfAKd5Rs8IaLk4Pv0mqPd27qgg",
-    authDomain: "yanuar-contact.firebaseapp.com",
+    authDomain: "yanuaraditia.com",
     databaseURL: "https://yanuar-contact.firebaseio.com",
     projectId: "yanuar-contact",
     storageBucket: "yanuar-contact.appspot.com",
